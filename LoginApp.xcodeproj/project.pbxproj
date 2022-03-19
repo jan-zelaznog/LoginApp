@@ -13,6 +13,7 @@
 		3D86077C27E5770B00A508F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D86077A27E5770B00A508F8 /* Main.storyboard */; };
 		3D86077E27E5770D00A508F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D86077D27E5770D00A508F8 /* Assets.xcassets */; };
 		3D86078127E5770D00A508F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D86077F27E5770D00A508F8 /* LaunchScreen.storyboard */; };
+		3D86078B27E639C000A508F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D86078A27E639C000A508F8 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D86077D27E5770D00A508F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D86078027E5770D00A508F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D86078227E5770D00A508F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D86078A27E639C000A508F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3D86077D27E5770D00A508F8 /* Assets.xcassets */,
 				3D86077F27E5770D00A508F8 /* LaunchScreen.storyboard */,
 				3D86078227E5770D00A508F8 /* Info.plist */,
+				3D86078A27E639C000A508F8 /* HomeViewController.swift */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				3D86077927E5770B00A508F8 /* ViewController.swift in Sources */,
 				3D86077527E5770B00A508F8 /* AppDelegate.swift in Sources */,
 				3D86077727E5770B00A508F8 /* SceneDelegate.swift in Sources */,
+				3D86078B27E639C000A508F8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
