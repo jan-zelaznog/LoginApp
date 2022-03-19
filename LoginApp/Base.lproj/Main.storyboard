@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ytv-jG-7ye">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TYG-Vw-vM3">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -190,9 +191,51 @@
             </objects>
             <point key="canvasLocation" x="1449" y="-29"/>
         </scene>
+        <!--Second View Controller-->
+        <scene sceneID="rYH-XP-4qP">
+            <objects>
+                <viewController id="TYG-Vw-vM3" customClass="SecondViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lbz-3m-xZN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rUW-ed-tva">
+                                <rect key="frame" x="191" y="132.66666666666666" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모든인간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsd-aY-sEQ">
+                                <rect key="frame" x="20" y="84" width="374" height="28.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VN3-Xc-Ct1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VN3-Xc-Ct1" firstAttribute="trailing" secondItem="Jsd-aY-sEQ" secondAttribute="trailing" constant="20" id="1ZB-9A-wO4"/>
+                            <constraint firstItem="rUW-ed-tva" firstAttribute="top" secondItem="Jsd-aY-sEQ" secondAttribute="bottom" constant="20" id="GLj-wa-uHe"/>
+                            <constraint firstItem="Jsd-aY-sEQ" firstAttribute="top" secondItem="VN3-Xc-Ct1" secondAttribute="top" constant="40" id="RUD-S6-LSf"/>
+                            <constraint firstItem="Jsd-aY-sEQ" firstAttribute="centerX" secondItem="lbz-3m-xZN" secondAttribute="centerX" id="WnB-Cr-PzJ"/>
+                            <constraint firstItem="Jsd-aY-sEQ" firstAttribute="leading" secondItem="VN3-Xc-Ct1" secondAttribute="leading" constant="20" id="ucz-e0-88s"/>
+                            <constraint firstItem="rUW-ed-tva" firstAttribute="centerX" secondItem="lbz-3m-xZN" secondAttribute="centerX" id="voX-pO-w2n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="Jsd-aY-sEQ" id="C7t-AW-hJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpD-Of-QKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="-29"/>
+        </scene>
     </scenes>
     <resources>
         <image name="brain.head.profile" catalog="system" width="114" height="128"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
