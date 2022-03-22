@@ -8,7 +8,10 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    @IBOutlet weak var tvInstrucciones: UITextView!
+    
     @IBOutlet weak var label1 : UILabel!
+    
     func setGradientBackground() {
         let colorTop =  UIColor(red: 255.0/255.0, green: 249.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
         let colorBottom = UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 58.0/255.0, alpha: 1.0).cgColor
@@ -21,7 +24,8 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setGradientBackground()
+        self.view.backgroundColor = UIColor(named: "Main")
+        //setGradientBackground()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,6 +38,10 @@ class SecondViewController: UIViewController {
         // UIFont.systemFont(ofSize: 34)
         // RGB 0-100% rojo, 0-100% verde, 0-100% azul
         // #FF99cc
+        tvInstrucciones.textColor = .orange
+        tvInstrucciones.font = UIFont.systemFont(ofSize: 24)
+        // \n representa un salto de línea
+        tvInstrucciones.text += "\nen un lugar de la mancha de cuyo nombre no quiero acordarme..."
     }
     
 

@@ -43,6 +43,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // para que no aparezca una opción seleccionada por default
+        opciones.isEnabled = false
         opciones.selectedSegmentIndex = UISegmentedControl.noSegment
     }
 }

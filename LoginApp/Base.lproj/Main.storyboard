@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TYG-Vw-vM3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ytv-jG-7ye">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -204,6 +204,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="el quijote" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pdi-8u-S9Y">
+                                <rect key="frame" x="50" y="196.66666666666663" width="314" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="sl6-fL-SXy"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="모든인간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsd-aY-sEQ">
                                 <rect key="frame" x="20" y="84" width="374" height="28.666666666666671"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -215,15 +225,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="VN3-Xc-Ct1" firstAttribute="trailing" secondItem="Jsd-aY-sEQ" secondAttribute="trailing" constant="20" id="1ZB-9A-wO4"/>
+                            <constraint firstItem="pdi-8u-S9Y" firstAttribute="leading" secondItem="VN3-Xc-Ct1" secondAttribute="leading" constant="50" id="9li-OZ-aMD"/>
                             <constraint firstItem="rUW-ed-tva" firstAttribute="top" secondItem="Jsd-aY-sEQ" secondAttribute="bottom" constant="20" id="GLj-wa-uHe"/>
                             <constraint firstItem="Jsd-aY-sEQ" firstAttribute="top" secondItem="VN3-Xc-Ct1" secondAttribute="top" constant="40" id="RUD-S6-LSf"/>
                             <constraint firstItem="Jsd-aY-sEQ" firstAttribute="centerX" secondItem="lbz-3m-xZN" secondAttribute="centerX" id="WnB-Cr-PzJ"/>
+                            <constraint firstItem="VN3-Xc-Ct1" firstAttribute="trailing" secondItem="pdi-8u-S9Y" secondAttribute="trailing" constant="50" id="b8A-Gk-tbO"/>
+                            <constraint firstItem="pdi-8u-S9Y" firstAttribute="top" secondItem="rUW-ed-tva" secondAttribute="bottom" constant="30" id="tH6-gx-23C"/>
                             <constraint firstItem="Jsd-aY-sEQ" firstAttribute="leading" secondItem="VN3-Xc-Ct1" secondAttribute="leading" constant="20" id="ucz-e0-88s"/>
                             <constraint firstItem="rUW-ed-tva" firstAttribute="centerX" secondItem="lbz-3m-xZN" secondAttribute="centerX" id="voX-pO-w2n"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label1" destination="Jsd-aY-sEQ" id="C7t-AW-hJP"/>
+                        <outlet property="tvInstrucciones" destination="pdi-8u-S9Y" id="4kR-Ma-YSA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpD-Of-QKN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -236,6 +250,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
